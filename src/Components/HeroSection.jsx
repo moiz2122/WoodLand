@@ -20,7 +20,7 @@ function HeroSection() {
       <Slider {...settings} className="h-[80vh]">
         <div className="relative h-full">
           <img src={bannerOne} className="h-[80vh] object-cover" />{" "}
-          <div className="absolute inset-0 flex items-center justify-center text-center text-white">
+          {/* <div className="absolute inset-0 flex items-center justify-center text-center text-white">
             <div className="p-8 rounded-md">
               <h1 className="text-4xl font-bold text-black mb-4">
                 Welcome to Our Store
@@ -34,7 +34,7 @@ function HeroSection() {
                 className="w-full px-4 py-2 rounded-md border border-gray-300 text-black"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="relative h-full">
           <img src={bannerTwo} className="h-[80vh] object-cover" />{" "}
