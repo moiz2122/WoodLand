@@ -15,9 +15,9 @@ function App() {
       <Navbar />
       <Sidebar />
       <Cart />
-      <section className="Hero-Section">
+      {/* <section className="Hero-Section">
         <HeroSection />
-      </section>
+      </section> */}
       <main className="relative main-products-categ-container grid grid-cols-10 w-full gap-y-7 mt-10">
         <Categeories />
         <ProductGrid />
