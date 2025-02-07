@@ -1,0 +1,9 @@
+/* Change Toastify success icon (checkmark) color */
+.Toastify__toast--success .Toastify__toast-icon svg {
+  fill: #019376 !important; /* Change this color */
+}
+
+/* Change Toastify progress bar color for success */
+.Toastify__progress-bar--success {
+  background-color: #019376 !important; /* Change this color */
+}
