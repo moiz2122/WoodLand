@@ -24,7 +24,7 @@ function App() {
       </main>
       {isCartOpen || isSidebarOpen ? (
         <a
-          className="bg-black bg-opacity-60 w-full h-full absolute top-0 z-30"
+          className="cursor-pointer bg-black bg-opacity-60 w-full h-full absolute top-0 z-30"
           onClick={() => {
             if (isCartOpen) {
               toggleCart();
