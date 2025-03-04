@@ -36,7 +36,7 @@ function App() {
       ) : (
         ""
       )}
-      {/* navbar fixed at Bottom */}
+      {/* navbar fixed at Bottom on mobile*/}
       <div className="h-12 nav-bottom flex justify-between md:hidden fixed bottom-0 z-20 shadow-lg bg-white w-full px-3">
         <button
           onClick={() => {
