@@ -93,7 +93,7 @@ function ProductCard() {
             return (
               <div
                 role="status"
-                class="ml-10 max-w-sm p-4 border border-gray-200 rounded-sm shadow-sm animate-pulse md:p-6 dark:border-gray-700 bg-white"
+                class="ml-7 sm:ml-0 md:ml-0 max-w-sm p-4 border border-gray-200 rounded-sm shadow-sm animate-pulse md:p-6 dark:border-gray-700 bg-white"
               >
                 <div class="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded-sm dark:bg-gray-700">
                   <svg
