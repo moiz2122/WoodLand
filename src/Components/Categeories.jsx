@@ -25,7 +25,7 @@ function Categeories() {
                   height="60"
                   viewBox="0 0 60 60"
                   fill="currentColor"
-                  class="w-10 h-10"
+                  className="w-10 h-10"
                 >
                   <path
                     id="Bed"
@@ -42,7 +42,7 @@ function Categeories() {
                   height="48"
                   viewBox="0 0 66.782 48"
                   fill="currentColor"
-                  class="w-10 h-10"
+                  className="w-10 h-10"
                 >
                   <path
                     id="Sofa"
@@ -59,7 +59,7 @@ function Categeories() {
                   height="48.75"
                   viewBox="0 0 60 48.75"
                   fill="currentColor"
-                  class="w-10 h-10"
+                  className="w-10 h-10"
                 >
                   <path
                     id="Center_table"
@@ -77,7 +77,7 @@ function Categeories() {
                   height="62"
                   viewBox="0 0 40.4 62"
                   fill="currentColor"
-                  class="w-10 h-10"
+                  className="w-10 h-10"
                 >
                   <g id="Chair" transform="translate(-312 -308)">
                     <circle
@@ -87,10 +87,10 @@ function Categeories() {
                       cy="0.6"
                       r="0.6"
                       transform="translate(322 314.4)"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                     ></circle>
                     <circle
@@ -100,10 +100,10 @@ function Categeories() {
                       cy="0.6"
                       r="0.6"
                       transform="translate(341.2 314.4)"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                     ></circle>
                     <circle
@@ -113,10 +113,10 @@ function Categeories() {
                       cy="0.6"
                       r="0.6"
                       transform="translate(331.6 314.4)"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                     ></circle>
                     <circle
@@ -126,10 +126,10 @@ function Categeories() {
                       cy="0.6"
                       r="0.6"
                       transform="translate(322 324)"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                     ></circle>
                     <circle
@@ -139,10 +139,10 @@ function Categeories() {
                       cy="0.6"
                       r="0.6"
                       transform="translate(341.2 324)"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                     ></circle>
                     <circle
@@ -152,10 +152,10 @@ function Categeories() {
                       cy="0.6"
                       r="0.6"
                       transform="translate(331.6 324)"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                     ></circle>
                     <circle
@@ -165,10 +165,10 @@ function Categeories() {
                       cy="0.6"
                       r="0.6"
                       transform="translate(322 333.6)"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                     ></circle>
                     <circle
@@ -178,10 +178,10 @@ function Categeories() {
                       cy="0.6"
                       r="0.6"
                       transform="translate(341.2 333.6)"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                     ></circle>
                     <circle
@@ -191,10 +191,10 @@ function Categeories() {
                       cy="0.6"
                       r="0.6"
                       transform="translate(331.6 333.6)"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                     ></circle>
                     <path
@@ -204,9 +204,9 @@ function Categeories() {
                       transform="translate(0 5.2)"
                       fill="none"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                     ></path>
                     <line
                       id="Line_7"
@@ -215,9 +215,9 @@ function Categeories() {
                       transform="translate(315.4 345)"
                       fill="none"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                     ></line>
                     <line
                       id="Line_8"
@@ -226,9 +226,9 @@ function Categeories() {
                       transform="translate(349 345)"
                       fill="none"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                     ></line>
                     <path
                       id="Path_17428"
@@ -237,9 +237,9 @@ function Categeories() {
                       transform="translate(0.4 0)"
                       fill="none"
                       stroke="#212121"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                     ></path>
                   </g>
                 </svg>

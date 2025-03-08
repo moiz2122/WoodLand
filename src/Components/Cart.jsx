@@ -25,8 +25,8 @@ function Cart() {
       }`}
     >
       <section className="relative flex h-full flex-col w-full">
-        <header class="fixed top-0 z-10 flex w-[20rem] sm:w-[28rem] md:[28rem] max-w-md items-center justify-between border-b border-border-200 border-opacity-75 px-6 py-4 bg-white">
-          <div class="flex gap-x-2 font-semibold">
+        <header className="fixed top-0 z-10 flex w-[20rem] sm:w-[28rem] md:[28rem] max-w-md items-center justify-between border-b border-border-200 border-opacity-75 px-6 py-4 bg-white">
+          <div className="flex gap-x-2 font-semibold">
             <svg
               className="text-customgreen shrink-0"
               width="24"
@@ -54,25 +54,25 @@ function Cart() {
                 </g>
               </g>
             </svg>
-            <span class="flex text-customgreen">{cart.length} Items</span>
+            <span className="flex text-customgreen">{cart.length} Items</span>
           </div>
           <button
-            class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 transition-all duration-200 hover:bg-customgreen hover:text-white focus:bg-customgreen"
+            className="flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 transition-all duration-200 hover:bg-customgreen hover:text-white focus:bg-customgreen"
             onClick={() => {
               toggleCart();
             }}
           >
-            <span class="sr-only">close</span>
+            <span className="sr-only">close</span>
             <svg
-              class="h-3 w-3"
+              className="h-3 w-3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>
@@ -190,8 +190,8 @@ function Cart() {
                   y2="1"
                   gradientUnits="objectBoundingBox"
                 >
-                  <stop offset="0" stop-color="#029477"></stop>
-                  <stop offset="1" stop-color="#009e7f"></stop>
+                  <stop offset="0" stopColor="#029477"></stop>
+                  <stop offset="1" stopColor="#009e7f"></stop>
                 </linearGradient>
               </defs>
               <g
@@ -310,12 +310,12 @@ function Cart() {
             <h3 className="font-semibold text-base">No Products Found</h3>
           </div>
         )}
-        <footer class="fixed bottom-0 z-10 w-[20rem] sm:w-[28rem] md:[28rem] max-w-md px-6 py-5 bg-white">
-          <button class="flex h-12 w-full justify-between rounded-full p-1 text-sm font-bold shadow-700 transition-colors md:h-14 bg-customgreen">
-            <span class="flex h-full flex-1 items-center px-5 text-white">
+        <footer className="fixed bottom-0 z-10 w-[20rem] sm:w-[28rem] md:[28rem] max-w-md px-6 py-5 bg-white">
+          <button className="flex h-12 w-full justify-between rounded-full p-1 text-sm font-bold shadow-700 transition-colors md:h-14 bg-customgreen">
+            <span className="flex h-full flex-1 items-center px-5 text-white">
               Checkout
             </span>
-            <span class="flex h-full shrink-0 items-center rounded-full bg-white text-customgreen px-5 text-accent">
+            <span className="flex h-full shrink-0 items-center rounded-full bg-white text-customgreen px-5 text-accent">
               ${totalAmount}.00
             </span>
           </button>

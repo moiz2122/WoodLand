@@ -4,6 +4,8 @@ import logo from "../assets/svg.png";
 import { Productdata } from "../Context";
 import { Link } from "react-router-dom";
 const Navbar = () => {
+  console.log('Hello Navbar************');
+  
   const { toggleCart, toggleSidebar, cart } = useContext(Productdata);
   // stick to bottom navabr code : fixed bottom-0 z-50 shadow-lg bg-white w-full
   return (
@@ -56,7 +58,7 @@ const Navbar = () => {
               <svg
                 width="14"
                 height="16"
-                class="shrink-0"
+                className="shrink-0"
                 viewBox="0 0 12.686 16"
               >
                 <g transform="translate(-27.023 -2)">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
 import HeroSection from "./Components/HeroSection";
@@ -8,6 +8,7 @@ import Cart from "./Components/Cart";
 import { Productdata } from "./Context";
 import { useContext } from "react";
 function App() {
+  console.log("Hello from APP.jsx****************888");
   const { isSidebarOpen, isCartOpen, toggleCart, toggleSidebar, cart } =
     useContext(Productdata);
   return (
@@ -15,9 +16,9 @@ function App() {
       <Navbar />
       <Sidebar />
       <Cart />
-      {/* <section className="Hero-Section">
+      <section className="Hero-Section">
         <HeroSection />
-      </section> */}
+      </section>
       <main className="relative main-products-categ-container grid grid-cols-10 w-full gap-y-7 mt-10">
         <Categeories />
         <ProductGrid />
@@ -42,10 +43,15 @@ function App() {
           onClick={() => {
             toggleSidebar();
           }}
-          class="flex h-full items-center justify-center p-2 focus:text-accent focus:outline-0"
-          tabindex="0"
+          className="flex h-full items-center justify-center p-2 focus:text-accent focus:outline-0"
+          tabIndex="0"
         >
-          <svg width="25.567" height="18" viewBox="0 0 25.567 18" class="false">
+          <svg
+            width="25.567"
+            height="18"
+            viewBox="0 0 25.567 18"
+            className="false"
+          >
             <g transform="translate(-776 -462)">
               <rect
                 width="12.749"
@@ -73,10 +79,10 @@ function App() {
         </button>
 
         <button
-          class="flex h-full items-center justify-center p-2 focus:text-accent focus:outline-0"
-          tabindex="0"
+          className="flex h-full items-center justify-center p-2 focus:text-accent focus:outline-0"
+          tabIndex="0"
         >
-          <span class="sr-only">Search</span>
+          <span className="sr-only">Search</span>
           <svg viewBox="0 0 17.048 18" width="17.05" height="18">
             <path
               d="M380.321,383.992l3.225,3.218c.167.167.341.329.5.506a.894.894,0,1,1-1.286,1.238c-1.087-1.067-2.179-2.131-3.227-3.236a.924.924,0,0,0-1.325-.222,7.509,7.509,0,1,1-3.3-14.207,7.532,7.532,0,0,1,6,11.936C380.736,383.462,380.552,383.685,380.321,383.992Zm-5.537.521a5.707,5.707,0,1,0-5.675-5.72A5.675,5.675,0,0,0,374.784,384.513Z"
@@ -87,10 +93,10 @@ function App() {
         </button>
 
         <button
-          class="flex h-full items-center justify-center p-2 focus:text-accent focus:outline-0"
-          tabindex="0"
+          className="flex h-full items-center justify-center p-2 focus:text-accent focus:outline-0"
+          tabIndex="0"
         >
-          <span class="sr-only">Home</span>
+          <span className="sr-only">Home</span>
           <svg width="17.996" height="20.442" viewBox="0 0 17.996 20.442">
             <g transform="translate(-30.619 0.236)">
               <path
@@ -98,7 +104,7 @@ function App() {
                 transform="translate(0 0)"
                 fill="currentColor"
                 stroke="currentColor"
-                stroke-width="0.4"
+                strokeWidth="0.4"
               ></path>
             </g>
           </svg>
@@ -108,17 +114,17 @@ function App() {
           onClick={() => {
             toggleCart();
           }}
-          class="product-cart relative flex h-full items-center justify-center p-2 focus:text-accent focus:outline-0"
-          tabindex="0"
+          className="product-cart relative flex h-full items-center justify-center p-2 focus:text-accent focus:outline-0"
+          tabIndex="0"
         >
-          <span class="sr-only">Cart</span>
+          <span className="sr-only">Cart</span>
           <svg width="18" height="18" viewBox="0 0 18 18">
             <g transform="translate(-127 -122)">
               <path
                 d="M4.7,3.8H17.3a.9.9,0,0,1,.9.9V17.3a.9.9,0,0,1-.9.9H4.7a.9.9,0,0,1-.9-.9V4.7A.9.9,0,0,1,4.7,3.8ZM2,4.7A2.7,2.7,0,0,1,4.7,2H17.3A2.7,2.7,0,0,1,20,4.7V17.3A2.7,2.7,0,0,1,17.3,20H4.7A2.7,2.7,0,0,1,2,17.3ZM11,11C8.515,11,6.5,8.583,6.5,5.6H8.3c0,2.309,1.5,3.6,2.7,3.6s2.7-1.291,2.7-3.6h1.8C15.5,8.583,13.485,11,11,11Z"
                 transform="translate(125 120)"
                 fill="currentColor"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               ></path>
             </g>
           </svg>
@@ -132,10 +138,10 @@ function App() {
         </button>
 
         <button
-          class="flex h-full items-center justify-center p-2 focus:text-accent focus:outline-0"
-          tabindex="0"
+          className="flex h-full items-center justify-center p-2 focus:text-accent focus:outline-0"
+          tabIndex="0"
         >
-          <span class="sr-only">User</span>
+          <span className="sr-only">User</span>
           <svg width="16.577" height="18.6" viewBox="0 0 16.577 18.6">
             <g transform="translate(-95.7 -121.203)">
               <path
@@ -143,7 +149,7 @@ function App() {
                 transform="translate(7819 -2793.5)"
                 fill="currentColor"
                 stroke="currentColor"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               ></path>
             </g>
           </svg>

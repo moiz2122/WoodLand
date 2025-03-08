@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { createContext } from "react";
 import { ItemsData } from "./ItemsData";
 export const Productdata = createContext();
+
+
 export const DataProviderComponent = ({ children }) => {
   const [isSidebarOpen, setisSidebarOpen] = useState(false);
   const [items, setItems] = useState(ItemsData);
