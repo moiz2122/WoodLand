@@ -3,16 +3,13 @@ import { createContext } from "react";
 import { ItemsData } from "./ItemsData";
 export const Productdata = createContext();
 
-
 export const DataProviderComponent = ({ children }) => {
   const [isSidebarOpen, setisSidebarOpen] = useState(false);
   const [items, setItems] = useState(ItemsData);
   const [cart, setCart] = useState([]);
   const [itemquantity, setitemquantity] = useState(1);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  localStorage.setItem("ProductsData", JSON.stringify(items));
-  const SavedProducts = localStorage.getItem("ProductsData");
-  const productsArray = JSON.parse(SavedProducts);
+  const productsArray = items;
 
   //Categeries Array Code!!!
 
@@ -71,9 +68,8 @@ export const DataProviderComponent = ({ children }) => {
         setitemquantity((prevcount) => {
           return prevcount - 1;
         });
-      }
-      else{
-        removeCartItem(itemID)
+      } else {
+        removeCartItem(itemID);
       }
     }
   };
