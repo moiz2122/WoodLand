@@ -4,7 +4,6 @@ import { Productdata } from "../Context";
 function Shop() {
   const { productsArray, setItems, cart } = useContext(Productdata);
   console.log(`Shoppppppppppp`, cart);
-
   return (
     <section className="">
       {cart.map((cartitems) => {

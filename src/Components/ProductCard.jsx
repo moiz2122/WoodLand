@@ -12,7 +12,7 @@ function ProductCard() {
     setTimeout(() => {
       setloading(true);
     }, 1000);
-  }, productsArray);
+  },productsArray);
 
   const topRight = () => {
     toast.success("Product Added", {

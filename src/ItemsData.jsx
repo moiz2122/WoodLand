@@ -3,7 +3,7 @@ export const ItemsData = [
   {
     id: 1,
     name: "Ash Double Bed",
-    url: images.beds.kingSizebeds.kingSizebedTwo,
+    url: images.beds.kingSizebeds.kingSizebedOne,
     generalCategery: "Beds",
     categery: "king size Beds",
     price: 250.0,
@@ -11,7 +11,7 @@ export const ItemsData = [
   {
     id: 2,
     name: "Andes Deco Semi Double Bed",
-    url: images.beds.kingSizebeds.kingSizebedOne,
+    url: images.beds.kingSizebeds.kingSizebedTwo,
     generalCategery: "Beds",
     categery: "king size Beds",
     price: 450.0,

@@ -4,8 +4,8 @@ import logo from "../assets/svg.png";
 import { Productdata } from "../Context";
 import { Link } from "react-router-dom";
 const Navbar = () => {
-  console.log('Hello Navbar************');
-  
+  console.log("Hello Navbar************");
+
   const { toggleCart, toggleSidebar, cart } = useContext(Productdata);
   // stick to bottom navabr code : fixed bottom-0 z-50 shadow-lg bg-white w-full
   return (
@@ -83,6 +83,7 @@ const Navbar = () => {
                 </g>
               </svg>
               <span>Cart</span>
+              <span>{cart.length===0?null:cart.length}</span>
             </button>
           </div>
         </div>
