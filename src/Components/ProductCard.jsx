@@ -4,8 +4,8 @@ import { useContext } from "react";
 import "../toast.css";
 import { Productdata } from "../Context";
 function ProductCard() {
-  console.log('buggggggggggg');
-  
+  console.log("buggggggggggg");
+
   const { productsArray, allCategories, setItems, ItemsData, AddtoCart, cart } =
     useContext(Productdata);
   const [loading, setloading] = useState(false);
@@ -14,13 +14,13 @@ function ProductCard() {
     setTimeout(() => {
       setloading(true);
     }, 1000);
-  },productsArray);
+  }, productsArray);
 
-  const topRight = () => {
-    toast.success("Product Added", {
+  const topRight = (val) => {
+    toast.success(val, {
       position: "top-right",
       pauseOnHover: false,
-      autoClose: 2000,
+      autoClose: 1000,
       style: { backgroundColor: "white", color: "#019376" },
     });
   };
@@ -69,8 +69,16 @@ function ProductCard() {
                   </p>
                   <button
                     onClick={() => {
-                      AddtoCart(produtdetals);
-                      topRight();
+                      const alreadyInCart = cart.some(
+                        (item) => item.id === produtdetals.id
+                      );
+                      if (!alreadyInCart) {
+                        AddtoCart(produtdetals);
+                        topRight("Product added to cart!");
+                      }
+                      else{
+                        topRight("Product is already in the cart.");
+                      }
                     }}
                     className="flex items-center justify-center rounded-full text-customgreen gap-x-2 border-2 bg-light px-3 py-2 text-sm font-semibold transition-colors duration-300 hover:border-transparent hover:bg-customgreen hover:text-white"
                   >

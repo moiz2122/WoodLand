@@ -17,7 +17,7 @@ function App() {
       <Sidebar />
       <Cart />
       <section className="Hero-Section">
-        <HeroSection />
+        {/* <HeroSection /> */}
       </section>
       <main className="relative main-products-categ-container grid grid-cols-10 w-full gap-y-7 mt-10 pb-10">
         <Categeories />

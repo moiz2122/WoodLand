@@ -53,7 +53,7 @@ const Navbar = () => {
               onClick={() => {
                 toggleCart();
               }}
-              className="text-white bg-customgreen hover:bg-customdarkgreen rounded flex py-2 px-4 items-center justify-center gap-x-3"
+              className="relative text-white bg-customgreen hover:bg-customdarkgreen rounded flex py-2 px-4 items-center justify-center gap-x-3"
             >
               <svg
                 width="14"
@@ -83,7 +83,13 @@ const Navbar = () => {
                 </g>
               </svg>
               <span>Cart</span>
-              <span>{cart.length===0?null:cart.length}</span>
+              {cart.length > 0 ? (
+                <div className="absolute -top-2 -right-2 mt-0.5 p-[2px] bg-gradient-to-r from-white to-customgreen rounded-full">
+                  <span className="block rounded-full py-1 px-1.5 text-[10px] font-semibold leading-none bg-white text-customgreen">
+                    {cart.length}
+                  </span>
+                </div>
+              ) : null}
             </button>
           </div>
         </div>

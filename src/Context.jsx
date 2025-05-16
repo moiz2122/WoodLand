@@ -12,25 +12,23 @@ export const DataProviderComponent = ({ children }) => {
   const productsArray = items;
 
   // Searching logic!!
-const SearchingByName = (searchValue) => {
-  const trimmedValue = searchValue.trim().toLowerCase();
+  const SearchingByName = (searchValue) => {
+    const trimmedValue = searchValue.trim().toLowerCase();
 
-  if (trimmedValue === "") {
-    setItems(ItemsData);
-    return;
-  }
+    if (trimmedValue === "") {
+      setItems(ItemsData);
+      return;
+    }
 
-  const filteredData = ItemsData.filter((data) => {
-    return (
-      data.generalCategery.trim().toLowerCase().includes(trimmedValue) ||
-      data.name.trim().toLowerCase().includes(trimmedValue)
-    );
-  });
+    const filteredData = ItemsData.filter((data) => {
+      return (
+        data.generalCategery.trim().toLowerCase().includes(trimmedValue) ||
+        data.name.trim().toLowerCase().includes(trimmedValue)
+      );
+    });
 
-  setItems(filteredData);
-};
-
-
+    setItems(filteredData);
+  };
 
   //Categeries Array Code!!!
 
@@ -56,13 +54,7 @@ const SearchingByName = (searchValue) => {
 
   const AddtoCart = (product) => {
     setCart((prevCart) => {
-      const itemExists = prevCart.some((item) => item.id === product.id);
-
-      if (!itemExists) {
-        return [...prevCart, product];
-      }
-
-      return prevCart;
+      return [...prevCart, product];
     });
   };
 
