@@ -4,6 +4,8 @@ import { useContext } from "react";
 import "../toast.css";
 import { Productdata } from "../Context";
 function ProductCard() {
+  console.log('buggggggggggg');
+  
   const { productsArray, allCategories, setItems, ItemsData, AddtoCart, cart } =
     useContext(Productdata);
   const [loading, setloading] = useState(false);

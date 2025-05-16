@@ -19,7 +19,7 @@ function App() {
       <section className="Hero-Section">
         <HeroSection />
       </section>
-      <main className="relative main-products-categ-container grid grid-cols-10 w-full gap-y-7 mt-10">
+      <main className="relative main-products-categ-container grid grid-cols-10 w-full gap-y-7 mt-10 pb-10">
         <Categeories />
         <ProductGrid />
       </main>

@@ -4,7 +4,19 @@ import bannerOne from "../assets/picbazarBanner_1.jpg";
 import bannerTwo from "../assets/picbazarBanner_2.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useContext, useState } from "react";
+import { Productdata } from "../Context";
+import { CssSyntaxError } from "postcss";
 function HeroSection() {
+  const [searchValue, setsearchValue] = useState("");
+  const {
+    productsArray,
+    allCategories,
+    setItems,
+    ItemsData,
+    FilterProducts,
+    SearchingByName,
+  } = useContext(Productdata);
   const settings = {
     dots: true,
     fade: true,
@@ -52,9 +64,19 @@ function HeroSection() {
                     className="search item-center flex h-full w-full appearance-none overflow-hidden truncate rounded-lg text-sm text-heading placeholder-gray-500 transition duration-300 ease-in-out focus:outline-0 focus:ring-0 bg-light ltr:pl-6 rtl:pr-6 ltr:pr-14 rtl:pl-14 ltr:rounded-tr-none rtl:rounded-tl-none ltr:rounded-br-none rtl:rounded-bl-none  border ltr:border-r-0 rtl:border-l-0 border-transparent focus:border-accent"
                     name="search"
                     placeholder="Search your products from here"
-                    defaultValue=""
+                    value={searchValue}
+                    onChange={(e) => {
+                      setsearchValue(e.target.value);
+                      SearchingByName(searchValue);
+                    }}
                   />
-                  <button className="bg-customgreen flex h-full min-w-[143px] items-center justify-center rounded-lg bg-accent px-8 font-semibold text-white transition-colors duration-200 hover:bg-accent-hover focus:bg-accent-hover focus:outline-0 ltr:rounded-tl-none ltr:rounded-bl-none rtl:rounded-tr-none rtl:rounded-br-none">
+                  <button
+                    onClick={() => {
+                      SearchingByName(searchValue);
+                      console.log("Helooooooooooooooooooooo");
+                    }}
+                    className="bg-customgreen flex h-full min-w-[143px] items-center justify-center rounded-lg bg-accent px-8 font-semibold text-white transition-colors duration-200 hover:bg-accent-hover focus:bg-accent-hover focus:outline-0 ltr:rounded-tl-none ltr:rounded-bl-none rtl:rounded-tr-none rtl:rounded-br-none"
+                  >
                     <svg
                       viewBox="0 0 17.048 18"
                       className="h-4 w-4 ltr:mr-2.5 rtl:ml-2.5"

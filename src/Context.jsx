@@ -11,6 +11,27 @@ export const DataProviderComponent = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const productsArray = items;
 
+  // Searching logic!!
+const SearchingByName = (searchValue) => {
+  const trimmedValue = searchValue.trim().toLowerCase();
+
+  if (trimmedValue === "") {
+    setItems(ItemsData);
+    return;
+  }
+
+  const filteredData = ItemsData.filter((data) => {
+    return (
+      data.generalCategery.trim().toLowerCase().includes(trimmedValue) ||
+      data.name.trim().toLowerCase().includes(trimmedValue)
+    );
+  });
+
+  setItems(filteredData);
+};
+
+
+
   //Categeries Array Code!!!
 
   const allCategories = [
@@ -97,6 +118,7 @@ export const DataProviderComponent = ({ children }) => {
         setItems,
         FilterProducts,
         AddtoCart,
+        SearchingByName,
       }}
     >
       {children}
