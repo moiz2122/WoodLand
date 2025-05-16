@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext ,useState} from "react";
 import "../index.css";
 import logo from "../assets/svg.png";
 import { Productdata } from "../Context";
@@ -8,8 +8,20 @@ const Navbar = () => {
 
   const { toggleCart, toggleSidebar, cart } = useContext(Productdata);
   // stick to bottom navabr code : fixed bottom-0 z-50 shadow-lg bg-white w-full
+  const [isSticky, setIsSticky] = useState(false);
+
+   useEffect(() => {
+     const handleScroll = () => {
+       setIsSticky(window.scrollY > 150); // adjust scroll threshold
+     };
+
+     window.addEventListener("scroll", handleScroll);
+     return () => window.removeEventListener("scroll", handleScroll);
+   }, []);
   return (
-    <nav className={`shadow-lg bg-white`}>
+    <nav className={`shadow-lg bg-white transition-all duration-500 ease-in-out ${
+        isSticky ? `sticky top-0 z-50 opacity-1` : "relative"
+      }`}>
       <div className="container mx-auto flex items-center justify-between py-3 px-6">
         <div className="w-44 animate__animated animate__fadeInLeft">
           <img src={logo} alt="LOGO" className="" />
